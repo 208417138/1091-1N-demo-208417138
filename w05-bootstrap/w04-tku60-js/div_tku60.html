@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Demo</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <title>Pokemon</title>
+    <link rel="stylesheet" href="./div_tku60.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -45,10 +46,12 @@
               TKU Classdemo
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="./index_bs.html">Intro</a>
-              <a class="dropdown-item" href="./pokemon_bs.html">Pokemon</a>
-              <a class="dropdown-item" href="../w02/imgGallery.html">Image Gallery</a>
-              <a class="dropdown-item" href="../w04-tku60-js/div_tku60.html" >Div + TKU60</a>
+              <a class="dropdown-item" href="../w01/index_bs.html">Intro</a>
+              <a class="dropdown-item" href="../w01/pokemon_bs.html">Pokemon</a>
+              <a class="dropdown-item" href="../w02/imgGallery.html"
+                >Image Gallery</a
+              >
+              <a class="dropdown-item" href="./div_tku60.html">Div + TKU60</a>
             </div>
           </li>
           <li class="nav-item">
@@ -57,62 +60,60 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
-
         </ul>
       </div>
     </nav>
-    <div class="container">
-      <div class="row">
-        <h1 class="mx-auto mt-5">First Gen Pokemon Chart</h1>
-        <table class="table table-bordered">
-          <tr>
-            <th>Image</th>
-            <th>Name</th>
-            <th>Type</th>
-            <th>Evolves Into</th>
-          </tr>
-          <tr>
-            <td>
-              <img
-                src="http://img4.wikia.nocookie.net/__cb20140328190757/pokemon/images/thumb/2/21/001Bulbasaur.png/200px-001Bulbasaur.png"
-                
-                alt=""
-              />
-            </td>
-            <td>Bulbasaur</td>
-            <td>Grass/Poison</td>
-            <td>
-              <a href="http://pokemon.wikia.com/wiki/Ivysaur">Ivysaur </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img
-                src="http://img4.wikia.nocookie.net/__cb20140724195345/pokemon/images/thumb/7/73/004Charmander.png/200px-004Charmander.png"
-                
-                alt=""
-              />
-            </td>
-            <td>Charmander</td>
-            <td>Fire</td>
-            <td>
-              <a href="https://pokemon.fandom.com/wiki/Charmeleon">Charmeleon </a>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img
-                src="http://img1.wikia.nocookie.net/__cb20140328191525/pokemon/images/thumb/3/39/007Squirtle.png/200px-007Squirtle.png"
-                alt=""
-              />
-            </td>
-            <td>Squirtle</td>
-            <td>Water</td>
-            <td>
-              <a href="https://pokemon.fandom.com/wiki/Wartortle">Wartortle </a>
-            </td>
-          </tr>
+    <div id="container">
+      <div id="heading">
+        <h2>Heading</h2>
+        <ul>
+          <li>
+            <a href="#">Link 1</a>
+          </li>
+          <li>
+            <a href="#">Link 2</a>
+          </li>
+          <li>
+            <a href="#">Link 2</a>
+          </li>
+        </ul>
       </div>
+      <div id="main">
+        <aside>
+          <ul>
+            <li onclick="changeVideo(1)">
+              <a href="#">淡江大戲 1</a>
+            </li>
+            <li onclick="changeVideo(2)">
+              <a href="#">淡江大戲 2</a>
+            </li>
+            <li onclick="changeVideo(3)">
+              <a href="#">淡江大戲 3</a>
+            </li>
+            <li onclick="changeVideo(4)">
+              <a href="#">淡江大戲 4</a>
+            </li>
+            <li onclick="changeVideo(5)">
+              <a href="#">淡江大戲 5</a>
+            </li>
+          </ul>
+        </aside>
+        <div id="section">
+          <div class="video-responsive">
+            <div id="player">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RechrtUxfQc"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -129,5 +130,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="./div_tku60.js"></script>
   </body>
 </html>
