@@ -89,6 +89,13 @@ ul {
   margin-top: 10px;
 }
 
+.dark{
+  color:#fff;
+ }
+.dark .btn{
+  background: #f4f4f4;
+  color: #333;
+}
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -140,7 +147,7 @@ ul {
   padding: 60px 0 0 30px;
 }
 
-.xbox p {
+.xbox p, .carbon p {
   padding: 20px 0 20px;
 }
 /*Carbon*/
