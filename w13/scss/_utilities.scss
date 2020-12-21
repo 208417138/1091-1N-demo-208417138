@@ -37,27 +37,35 @@
   outline: none;
   transition: all 0.2s ease-in;
 
-  &.btn-primary {
-    @include set-background($primary-color);
-    &:hover {
-      background: lighten($primary-color, 5%);
-    }
-  }
-  &.btn-light {
-    @include set-background($light-color);
-    &:hover {
-      background: lighten($dark-color, 5%);
-      color: #fff;
-    }
-  }
-  &.btn-outline-warning {
-    color: #ffc107;
-    border: 1px solid #ffc107;
+  &.btn-outline-primary {
+    color: #17a2b8;
+    border: 1px solid #17a2b8;
     border-radius: 0.25rem;
 
     @include set-background($light-color);
     &:hover {
-      background: lighten($warning-color, 5%);
+      background: lighten($primary-color, 5%);
+    }
+  }
+  &.btn-outline-light {
+    color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+    border-radius: 0.25rem;
+
+    @include set-background($dark-color);
+    &:hover {
+      background: lighten($light-color, 5%);
+      color: #333;
+    }
+  }
+  &.btn-outline-danger {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 0.25rem;
+
+    @include set-background($light-color);
+    &:hover {
+      background: lighten($danger-color, 5%);
       color: #333;
     }
   }
@@ -72,14 +80,14 @@
       color: #333;
     }
   }
-  &.btn-outline-info {
-    color: #17a2b8;
-    border: 1px solid #17a2b8;
+  &.btn-outline-dark {
+    color: #343a40;
+    border: 1px solid #343a40;
     border-radius: 0.25rem;
 
     @include set-background($light-color);
     &:hover {
-      background: lighten($info-color, 5%);
+      background: lighten($dark-color, 5%);
       color: #fff;
     }
   }
